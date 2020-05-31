@@ -382,6 +382,16 @@ a.link_item.on,
     color: inherit;
 }
 
+::selection {
+    color: #fff;
+    background: #3f3f3f;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #3f3f3f;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
