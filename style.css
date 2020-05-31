@@ -153,11 +153,10 @@ a {
 }
 
 a:hover {
-    color: #6a5442;
+    color: #698882;
     color: var(--point);
 }
 
-/* 전체 박스 */
 #container {
     min-height: 100vh;
     display: flex;
@@ -165,7 +164,6 @@ a:hover {
     justify-content: flex-start;
 }
 
-/* 헤더 */
 #header {
     position: absolute;
     width: 100%;
@@ -211,7 +209,7 @@ a.link_item.on,
 #header a:hover,
 #header button:hover,
 #header i:hover {
-    color: #6a5442 !important;
+    color: #698882 !important;
     color: var(--point) !important;
 }
 
@@ -244,7 +242,7 @@ a.link_item.on,
 
 .right .in {
     position: relative;
-    margin-right: 25px;
+    margin-right: -25px;
 }
 
 .catebox {
@@ -375,13 +373,24 @@ a.link_item.on,
     bottom: 80px;
     z-index: 999;
     text-align: center;
-    color: #6a5442;
+    color: #698882;
     color: var(--point);
     font-family: 'Lexend Deca', sans-serif;
 }
 
 .top:hover {
     color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #232323;
+    background-color: var(--scroll);
 }
 
 /*  */
@@ -481,6 +490,12 @@ a.link_item.on,
 
     #myo_gal .item .date {
         display: none;
+    }
+    
+    .pagination {
+    cursor: default;
+    text-align: center;
+    margin: 50px 0 30px;
     }
 
     .top {

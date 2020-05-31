@@ -24,7 +24,7 @@ $(function () {
 	});
 });
 
-$(function () { // íƒ‘ë²„íŠ¼ 
+$(function () {
 	$(".top").hide();
 	$(function () {
 		$(window).scroll(function () {
